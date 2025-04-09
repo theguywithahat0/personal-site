@@ -7,4 +7,25 @@
 
   gtag('config', 'G-4H2GFZ223P');
 </script>
-
+<head>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" />
+<script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js"></script>
+<script>
+window.addEventListener("load", function(){
+  window.cookieconsent.initialise({
+    palette: {
+      popup: { background: "#000" },
+      button: { background: "#f1d600" }
+    },
+    theme: "classic",
+    position: "bottom-right",
+    content: {
+      message: "This site uses cookies for analytics.",
+      dismiss: "Got it!",
+      link: "Learn more",
+      href: "https://policies.google.com/technologies/cookies"
+    }
+  });
+});
+</script>
+</head>
